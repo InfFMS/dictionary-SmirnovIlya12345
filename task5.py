@@ -4,3 +4,13 @@
 # и предлагает пользователю ввести слово для перевода. 
 # Если введенного слова нет в словаре выводится сообщение "нет такого слова".
 # Используйте словари для словаря:)
+my_dict = {'привет': 'hello', 'как дела': 'how are you', 'мысль': 'thought', 'сквозь': 'through', 'хотя': 'although', 'кашель': 'сough', 'сук': 'bough', 'твёрдый': 'tough'}
+print('Enter a russian word')
+b=str(input())
+if b in my_dict:
+    print(my_dict[b])
+else:
+    print('Enter a translation')
+    с=input()
+    my_dict[b]=с
+    print(my_dict.get(b))

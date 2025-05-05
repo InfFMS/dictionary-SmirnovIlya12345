@@ -6,3 +6,10 @@
 # Абракадабра
 # Вывод
 # а-5 б-2 д-1 к-1 р-2
+print('Enter something')
+s=input().lower()
+a=[]
+for i in range(len(s)):
+    a.append(s[i])
+my_dict2 = {n : s.count(n) for n in s}
+print(str(my_dict2)[1:-1:1])
